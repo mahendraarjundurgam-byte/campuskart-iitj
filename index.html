@@ -2,63 +2,122 @@
 <html>
 <head>
   <title>CampusKart IITj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
-      text-align: center;
+      overflow-x: hidden;
     }
 
     .container {
-      margin-top: 100px;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 40px;
+      display: inline-block;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      animation: fadeIn 1.5s ease;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 18px;
+      opacity: 0.9;
     }
 
     .btn {
-      background: white;
-      color: #007BFF;
-      padding: 15px 30px;
+      margin-top: 25px;
+      padding: 15px 35px;
       font-size: 18px;
       border: none;
-      border-radius: 10px;
+      border-radius: 30px;
       cursor: pointer;
-      margin-top: 20px;
+      color: white;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
     .btn:hover {
-      background: #ddd;
+      transform: scale(1.1);
     }
 
-    .card {
-      background: rgba(255,255,255,0.2);
-      padding: 30px;
-      border-radius: 15px;
+    .features {
+      margin-top: 60px;
+    }
+
+    .feature-box {
       display: inline-block;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
+
     <div class="card">
       <h1>CampusKart IITj</h1>
       <p>Buy & Sell inside your campus easily</p>
 
-      <a href="https://drive.google.com/file/d/1dkzjl-3Ra2tFdso3yQAOz5m6e4jTzals/view?usp=share_link">
+      <a href="PASTE_LINK_HERE">
         <button class="btn">Download Latest APK</button>
       </a>
 
-      <p>Version 1.0</p>
+      <p>Version 2.0</p>
     </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>📦 Easy Selling</h3>
+        <p>Post items in seconds</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>💬 Chat</h3>
+        <p>Talk directly with buyers</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>⚡ Fast Deals</h3>
+        <p>Quick campus transactions</p>
+      </div>
+    </div>
+
+    <footer>
+      ©️ 2026 CampusKart IITj
+    </footer>
+
   </div>
 
 </body>
